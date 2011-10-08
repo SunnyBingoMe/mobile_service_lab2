@@ -1,0 +1,73 @@
+2011-10-08 20:07 
+PV5d)pE*F@@nx/v/V}*y`PiPOST / HTTP/1.1
+Host: lol.comlab.bth.se:8090
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.3.3-1ubuntu9.5
+Content-Type: text/xml; charset=utf-8
+SOAPAction: "getTodoList"
+Content-Length: 571
+
+<?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns1="http://laptop.sunnyboy.me:8080/mobile/lab2/bisu10_et2503_lab2/soap/todo.wdsl" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><SOAP-ENV:Body><ns1:getTodoListRequestElement xsi:nil="true" xsi:type="ns1:getTodoListRequestElement"/></SOAP-ENV:Body></SOAP-ENV:Envelope>
+
+
+2011-10-08 19:50 
+PV5d)pE*@@x/H{aPHfPOST / HTTP/1.1
+Host: lol.comlab.bth.se:8090
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.3.3-1ubuntu9.5
+Content-Type: text/xml; charset=utf-8
+SOAPAction: "getTodoList"
+Content-Length: 571
+//plink is not what i thought
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns1="http://laptop.sunnyboy.me:8080/mobile/lab2/bisu10_et2503_lab2/soap/todo.wdsl" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><SOAP-ENV:Body><ns1:getTodoListRequestElement xsi:nil="true" xsi:type="ns1:getTodoListRequestElement"/></SOAP-ENV:Body></SOAP-ENV:Envelope>
+
+
+2011-10-08 19:46
+PV5d)pE*@@x/V5!sAW9P:POST / HTTP/1.1
+Host: lol.comlab.bth.se:8090
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.3.3-1ubuntu9.5
+Content-Type: text/xml; charset=utf-8
+SOAPAction: "getTodoList"
+Content-Length: 571
+
+<?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns1="http://laptop.sunnyboy.me:8080/mobile/lab2/bisu10_et2503_lab2/soap/todo.wdsl" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><SOAP-ENV:Body><ns1:getTodoListRequestElement xsi:nil="true" xsi:type="ns1:getTodoListRequestElement"/></SOAP-ENV:Body></SOAP-ENV:Envelope>
+
+
+
+2011-10-08 19:44
+PV5d)pE@@"x/U}+>P-POST / HTTP/1.1
+Host: lol.comlab.bth.se:8090
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.3.3-1ubuntu9.5
+Content-Type: text/xml; charset=utf-8
+SOAPAction: "getTodoList"
+Content-Length: 290
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://laptop.sunnyboy.me:8080/mobile/lab2/bisu10_et2503_lab2/soap/todo.wdsl"><SOAP-ENV:Body><ns1:getTodoListRequestElement/></SOAP-ENV:Body></SOAP-ENV:Envelope>
+
+
+PV5d)pE6@@x/V.\,vmPrPOST / HTTP/1.1
+Host: lol.comlab.bth.se:8090
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.3.3-1ubuntu9.5
+Content-Type: text/xml; charset=utf-8
+SOAPAction: "getTodoList"
+Content-Length: 238
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Body>
+	<symbol>&lt;acro xsi:type='xs:string'&gt;abcd10&lt;/acro&gt;</symbol>
+</SOAP-ENV:Body></SOAP-ENV:Envelope>
+
+
+PV5d)pEU@@`Lx/gY0H_PhPOST / HTTP/1.1
+Host: lol.comlab.bth.se:8090
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.3.3-1ubuntu9.5
+Content-Type: text/xml; charset=utf-8
+SOAPAction: "getTodoList"
+Content-Length: 485
+
+<?xml version='1.0' encoding='UTF-8'?><SOAP-ENV:Envelope xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:SOAP-ENC='http://schemas.xmlsoap.org/soap/encoding/' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'><SOAP-ENV:Body><getTodoList><acro xsi:type="xs:string">bisu10</acro></getTodoList></SOAP-ENV:Body></SOAP-ENV:Envelope>

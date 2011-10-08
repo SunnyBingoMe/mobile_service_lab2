@@ -1,0 +1,67 @@
+<?xml version ='1.0' encoding ='UTF-8' ?>
+<definitions 
+name='Sunny' 
+xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+targetNamespace='http://laptop.sunnyboy.me:8080/mobile/lab2/bisu10_et2503_lab2/soap/todo.wdsl' 
+xmlns:tns='http://laptop.sunnyboy.me:8080/mobile/lab2/bisu10_et2503_lab2/soap/todo.wdsl' 
+xmlns:soap='http://schemas.xmlsoap.org/wsdl/soap/' 
+xmlns='http://schemas.xmlsoap.org/wsdl/'
+>
+<!-- 
+	<types>
+    	<xs:schema elementFormDefault="qualified" targetNamespace="http://laptop.sunnyboy.me:8080/mobile/lab2/bisu10_et2503_lab2/soap/todo.wdsl">
+			<xs:element name="getTodoListRequestElement"><xs:complexType><xs:sequence>
+				<xs:element name="acro" type="xs:string"/>
+			</xs:sequence></xs:complexType></xs:element>
+			<xs:element name="createTodoRequestElement"><xs:complexType><xs:sequence>
+				<xs:element name="acro" type="xs:string"/>
+			</xs:sequence></xs:complexType></xs:element>
+			
+		</xs:schema>
+	</types>
+	 -->
+	<message name='getTodoListRequest'>
+	  <part name='acro' type='xs:string'/>
+	</message>
+	<message name='createTodoRequest'>
+	  <part name='symbol' type='xs:string'/>
+	</message>
+	<message name='getTodoListResponse'>
+	  <part name='Result' type='xs:string'/>
+	</message>
+	<message name='createTodoResponse'>
+	  <part name='Result' type='xs:string'/>
+	</message>
+	
+	<portType name='SunnyPortType'>
+	  <operation name='getTodoList'>
+	    <input message='tns:getTodoListRequest'/>
+	    <output message='tns:getTodoListResponse'/>  
+	  </operation>
+	  <operation name='createTodo'>
+	    <input message='tns:createTodoRequest'/>
+	    <output message='tns:createTodoResponse'/>  
+	  </operation>   
+	</portType>
+	
+	<binding name='SunnyBinding' type='tns:SunnyPortType'>
+	  <soap:binding style='rpc' transport='http://schemas.xmlsoap.org/soap/http'/>
+	  <operation name='getTodoList'>
+	    <soap:operation soapAction='getTodoList'/>
+	    <input><soap:body use='encoded' namespace='http://laptop.sunnyboy.me:8080/mobile/lab2/bisu10_et2503_lab2/soap/todo.wdsl' encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/></input>
+	    <output><soap:body use='encoded' namespace='http://laptop.sunnyboy.me:8080/mobile/lab2/bisu10_et2503_lab2/soap/todo.wdsl' encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/></output>
+	  </operation>
+	  <operation name='createTodo'>
+	    <soap:operation soapAction='createTodo'/>
+	    <input><soap:body use='encoded' namespace='http://laptop.sunnyboy.me:8080/mobile/lab2/bisu10_et2503_lab2/soap/todo.wdsl' encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/></input>
+	    <output><soap:body use='encoded' namespace='http://laptop.sunnyboy.me:8080/mobile/lab2/bisu10_et2503_lab2/soap/todo.wdsl' encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/></output>
+	  </operation>
+	</binding>
+	
+	<service name='SunnyService'>
+	  <port name='SunnyPortType' binding='tns:SunnyBinding'>
+	    <soap:address location='http://lol.comlab.bth.se:8090'/>
+	  </port>
+	</service>
+	
+</definitions>

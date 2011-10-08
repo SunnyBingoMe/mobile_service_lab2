@@ -1,0 +1,6 @@
+These are links to the documentation for a few of the SOAP libraries we provide on the lol server.
+
+Libaxis, Java & Cxx: http://ws.apache.org/axis/java/index.html
+python-soaplib: http://github.com/jkp/soaplib
+php-soap: http://php.net/manual/en/book.soap.php
+libsoap-lite-perl: http://www.soaplite.com/2003/06/support.html

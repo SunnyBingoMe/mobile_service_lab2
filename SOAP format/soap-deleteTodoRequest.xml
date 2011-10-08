@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope 
+	xmlns:plnk="http://schemas.xmlsoap.org/ws/2003/05/partner-link/"
+    xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance"
+    xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" 
+    xmlns="toDoServer.Services">
+    <SOAP-ENV:Body>
+        <deleteTodo>
+            <acro xsi:type="xs:string">abcd10</acro>
+            <id xsi:type="xs: int">3</id>
+        </deleteTodo>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

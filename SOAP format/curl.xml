@@ -1,0 +1,37 @@
+curl -d ""  http://lol.comlab.bth.se:8090 >> /tmp/soap.xml 
+
+body:
+<getTodoList><acro xsi:type='xs:string'>bisu10</acro></getTodoList>
+
+
+<?xml version='1.0' encoding='UTF-8'?><SOAP-ENV:Envelope xmlns:plnk='http://schemas.xmlsoap.org/ws/2003/05/partner-link/'    xmlns:SOAP-ENC='http://schemas.xmlsoap.org/soap/encoding/'    xmlns:xs='http://www.w3.org/2001/XMLSchema'    xmlns:xsi='http://www.w3.org/1999/XMLSchema-instance'    xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'     xmlns='toDoServer.Services'>    <SOAP-ENV:Body>        <getTodoList>            <acro xsi:type='xs:string'>abcd10</acro>        </getTodoList>    </SOAP-ENV:Body></SOAP-ENV:Envelope>
+
+//del plnk, also works
+<?xml version='1.0' encoding='UTF-8'?><SOAP-ENV:Envelope    xmlns:SOAP-ENC='http://schemas.xmlsoap.org/soap/encoding/'    xmlns:xs='http://www.w3.org/2001/XMLSchema'    xmlns:xsi='http://www.w3.org/1999/XMLSchema-instance'    xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'     xmlns='toDoServer.Services'>    <SOAP-ENV:Body>        <getTodoList>            <acro xsi:type='xs:string'>abcd10</acro>        </getTodoList>    </SOAP-ENV:Body></SOAP-ENV:Envelope>
+
+//del xmlns=TodoServer.Services
+//works
+<?xml version='1.0' encoding='UTF-8'?><SOAP-ENV:Envelope xmlns:SOAP-ENC='http://schemas.xmlsoap.org/soap/encoding/' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/1999/XMLSchema-instance' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/' >    <SOAP-ENV:Body> <getTodoList> <acro xsi:type='xs:string'>bisu10</acro> </getTodoList> </SOAP-ENV:Body></SOAP-ENV:Envelope>
+
+//xs vs. xsd
+//both work
+<?xml version='1.0' encoding='UTF-8'?><SOAP-ENV:Envelope xmlns:SOAP-ENC='http://schemas.xmlsoap.org/soap/encoding/' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/1999/XMLSchema-instance' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/' >    <SOAP-ENV:Body> <getTodoList> <acro xsi:type='xs:string'>bisu10</acro> </getTodoList> </SOAP-ENV:Body></SOAP-ENV:Envelope>
+
+
+//manylly : works
+<?xml version='1.0' encoding='UTF-8'?><SOAP-ENV:Envelope xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:SOAP-ENC='http://schemas.xmlsoap.org/soap/encoding/' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' xmlns:ns1='http://laptop.sunnyboy.me:8080/mobile/lab2/bisu10_et2503_lab2/soap/todo.wdsl'  ><SOAP-ENV:Body><getTodoList><acro xsi:type='xs:string'>bisu10</acro></getTodoList></SOAP-ENV:Body></SOAP-ENV:Envelope>
+
+
+<?xml version='1.0' encoding='UTF-8'?><SOAP-ENV:Envelope xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns1='http://laptop.sunnyboy.me:8080/mobile/lab2/bisu10_et2503_lab2/soap/todo.wdsl' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:SOAP-ENC='http://schemas.xmlsoap.org/soap/encoding/' SOAP-ENV:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'><SOAP-ENV:Body><getTodoList><acro xsi:type='xs:string'>bisu10</acro></getTodoList></SOAP-ENV:Body></SOAP-ENV:Envelope>
+
+
+PV5d)pE6@@~x/O5tPPOST / HTTP/1.1
+Host: lol.comlab.bth.se:8090
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.3.3-1ubuntu9.5
+Content-Type: text/xml; charset=utf-8
+SOAPAction: "getTodoList"
+Content-Length: 559
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://laptop.sunnyboy.me:8080/mobile/lab2/bisu10_et2503_lab2/soap/todo.wdsl" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><SOAP-ENV:Body><ns1:getTodoList><acro xsi:type="xsd:string">bisu10</acro></ns1:getTodoList></SOAP-ENV:Body></SOAP-ENV:Envelope>

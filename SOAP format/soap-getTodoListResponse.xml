@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance"
+    xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" 
+    xmlns="Services.Services">
+    <SOAP-ENV:Body>
+        <getTodoListResponse>
+            <getTodoListResult type="tns:TodoDataArray">
+                <TodoData>
+                    <note xsi:type="xs:string">handla</note>
+                    <date xsi:type="xs:string">2010-04-16 14:00:00</date>
+                    <acro xs:null="1"/>
+                    <prio xsi:type="xs:int">1</prio>
+                    <id xsi:type="xs:int">1</id>
+                </TodoData>
+                <TodoData>
+                    <note xsi:type="xs:string">sola</note>
+                    <date xsi:type="xs:string">2010-04-18 14:00:00</date>
+                    <acro xs:null="1"/>
+                    <prio xsi:type="xs:int">1</prio>
+                    <id xsi:type="xs:int">3</id>
+                </TodoData>
+                <TodoData>
+                    <note xsi:type="xs:string">date</note>
+                    <date xsi:type="xs:string">2010-04-18 00:00:00</date>
+                    <acro xs:null="1"/>
+                    <prio xsi:type="xs:int">2</prio>
+                    <id xsi:type="xs:int">4</id>
+                </TodoData>
+                <TodoData>
+                    <note xsi:type="xs:string">date2</note>
+                    <date xsi:type="xs:string">2010-04-18 00:00:00</date>
+                    <acro xs:null="1"/>
+                    <prio xsi:type="xs:int">2</prio>
+                    <id xsi:type="xs:int">5</id>
+                </TodoData>
+            </getTodoListResult>
+        </getTodoListResponse>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

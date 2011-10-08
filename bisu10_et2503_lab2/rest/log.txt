@@ -1,0 +1,18 @@
+
+read(bisu10)
+((41L, '41414141', '5', datetime.datetime(2011, 10, 4, 11, 8)), (37L, '1104', '1', datetime.datetime(2011, 10, 4, 11, 4)), (31L, '5566', '1', datetime.datetime(2011, 9, 20, 18, 33)), (1L, 'test ttt1', '3', datetime.datetime(2011, 9, 15, 12, 14)))
+
+create(bisu10,56565656565656,10/04/2011 11:48:38,4)
+42
+
+update(42,bisu10,333333,10/04/2011 11:48:54,1)
+42
+
+read(aaa)
+((26L, '9999', '1', datetime.datetime(2011, 9, 20, 18, 9)), (27L, '6666', '1', datetime.datetime(2011, 9, 20, 18, 9)), (23L, '5555', '1', datetime.datetime(2011, 9, 20, 18, 0)), (22L, '1212', '1', datetime.datetime(2011, 9, 20, 17, 59)), (21L, '3333333333', '1', datetime.datetime(2011, 9, 20, 17, 59)), (20L, '2222222222', '1', datetime.datetime(2011, 9, 20, 17, 58)), (19L, '1001010', '1', datetime.datetime(2011, 9, 20, 17, 58)), (14L, 'eeeeeeeeeeee', '1', datetime.datetime(2011, 9, 20, 17, 0)), (13L, 'rrrrr', '1', datetime.datetime(2011, 9, 20, 16, 58)), (12L, '6666', '5', datetime.datetime(2011, 9, 20, 16, 58)), (9L, 'nnnnnnn', '5', datetime.datetime(2011, 9, 20, 16, 52)), (8L, 'ggggg', '3', datetime.datetime(2011, 9, 20, 16, 50)), (6L, 'bbbbbbbbb', '3', datetime.datetime(2011, 9, 20, 16, 41)), (5L, 'bb', '1', datetime.datetime(2011, 9, 20, 2, 45)))
+
+delete(21,aaa)
+21
+
+read(aaa)
+((26L, '9999', '1', datetime.datetime(2011, 9, 20, 18, 9)), (27L, '6666', '1', datetime.datetime(2011, 9, 20, 18, 9)), (23L, '5555', '1', datetime.datetime(2011, 9, 20, 18, 0)), (22L, '1212', '1', datetime.datetime(2011, 9, 20, 17, 59)), (20L, '2222222222', '1', datetime.datetime(2011, 9, 20, 17, 58)), (19L, '1001010', '1', datetime.datetime(2011, 9, 20, 17, 58)), (14L, 'eeeeeeeeeeee', '1', datetime.datetime(2011, 9, 20, 17, 0)), (13L, 'rrrrr', '1', datetime.datetime(2011, 9, 20, 16, 58)), (12L, '6666', '5', datetime.datetime(2011, 9, 20, 16, 58)), (9L, 'nnnnnnn', '5', datetime.datetime(2011, 9, 20, 16, 52)), (8L, 'ggggg', '3', datetime.datetime(2011, 9, 20, 16, 50)), (6L, 'bbbbbbbbb', '3', datetime.datetime(2011, 9, 20, 16, 41)), (5L, 'bb', '1', datetime.datetime(2011, 9, 20, 2, 45)))
