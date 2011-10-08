@@ -1,3 +1,4 @@
+<?php require_once 'sunny_function.php';?>
 <pre>
 <?php 
 ini_set("soap.wsdl_cache_enabled", "0");
@@ -9,14 +10,17 @@ try {
 
 //$commandDetails = array('acro'=>'bisu10');
 $commandDetails = 'bisu10';
-print("The get: $origtext \n");
+debug("The get: $commandDetails \n");
 try {
-    $resultGetTodoList = $client->getTodoList($commandDetails);
+    $resultGetTodoList = get_object_vars($client->getTodoList($commandDetails));
 }catch (Exception $e){
     echo "err ".$e->getCode().": ".$e->getMessage().$e->getTraceAsString();
 }
 
-echo $resultGetTodoList;
+
+
+
+debug($resultGetTodoList);
 
 ?>
 

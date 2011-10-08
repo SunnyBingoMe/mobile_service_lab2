@@ -7,27 +7,34 @@ xmlns:tns='http://laptop.sunnyboy.me:8080/mobile/lab2/bisu10_et2503_lab2/soap/to
 xmlns:soap='http://schemas.xmlsoap.org/wsdl/soap/' 
 xmlns='http://schemas.xmlsoap.org/wsdl/'
 >
-<!-- 
 	<types>
     	<xs:schema elementFormDefault="qualified" targetNamespace="http://laptop.sunnyboy.me:8080/mobile/lab2/bisu10_et2503_lab2/soap/todo.wdsl">
-			<xs:element name="getTodoListRequestElement"><xs:complexType><xs:sequence>
-				<xs:element name="acro" type="xs:string"/>
+			<xs:element name="getTodoListResponseDetails"><xs:complexType><xs:sequence>
+				<xs:element name="getTodoListResult" type="tns:TodoDataArray"/>
 			</xs:sequence></xs:complexType></xs:element>
-			<xs:element name="createTodoRequestElement"><xs:complexType><xs:sequence>
-				<xs:element name="acro" type="xs:string"/>
+			<xs:element name="TodoDataArray"><xs:complexType><xs:sequence>
+				<xs:element name="TodoData" type="tns:TodoDataDetails"/>
+			</xs:sequence></xs:complexType></xs:element>	
+			<xs:element name="TodoDataDetails"><xs:complexType><xs:sequence>
+				<xs:element name="note" type="xs:string"/>
+				<xs:element name="date" type="xs:string"/>
+				<xs:element name="acro" xs:null="1"/>
+				<xs:element name="prio" type="xs:int"/>
+				<xs:element name="id" type="xs:int"/>
 			</xs:sequence></xs:complexType></xs:element>
-			
+
 		</xs:schema>
 	</types>
-	 -->
+	
+	
 	<message name='getTodoListRequest'>
 	  <part name='acro' type='xs:string'/>
 	</message>
+	<message name='getTodoListResponse'>
+	  <part name='getTodoListResponse' type='tns:getTodoListResponseDetails'/>
+	</message>
 	<message name='createTodoRequest'>
 	  <part name='symbol' type='xs:string'/>
-	</message>
-	<message name='getTodoListResponse'>
-	  <part name='Result' type='xs:string'/>
 	</message>
 	<message name='createTodoResponse'>
 	  <part name='Result' type='xs:string'/>

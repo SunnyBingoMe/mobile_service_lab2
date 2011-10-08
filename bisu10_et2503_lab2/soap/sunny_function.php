@@ -6,8 +6,10 @@ $dbugOk = 0;
 $dDbug = 1;
 $dDbugOk = 0;
 function say($say) {
-	if (is_array ( $say )) {
-		print_r ( $say );
+	if (is_array ( $say ) || is_object($say)) {
+		echo("<pre>");
+	    var_dump( $say );
+	    echo("</pre>");
 		brn ();
 	} else {
 		echo $say . "<br/>\n";
