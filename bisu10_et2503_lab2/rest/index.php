@@ -71,7 +71,7 @@ require_once 'sunny_function.php';
 			};
 			xmlhttp.open("POST", "bisu10_lab2_ex2_task2.php", true);
 			xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-			xmlhttp.send("command=delete(" + idToDelete + "," + nameToDelete + ")");
+			xmlhttp.send("delete(" + idToDelete + "," + nameToDelete + ")");
 		};
 	</script>
 	<script type="text/javascript"> //add or update
@@ -130,7 +130,7 @@ require_once 'sunny_function.php';
 			var new<?php echo $toDoTableColumnNameList[2] ?> = $("#<?php echo $toDoTableColumnNameList[2] ?>").val();
 			var new<?php echo $toDoTableColumnNameList[3] ?> = $("#<?php echo $toDoTableColumnNameList[3] ?>").val();
 			var new<?php echo $toDoTableColumnNameList[4] ?> = $("#<?php echo $toDoTableColumnNameList[4] ?>").val();
-			var postContent = "command=";
+			var postContent = "";
 			if (updateId > 0){
 				postContent += "update(" + updateId + ",";
 			}else{
@@ -182,7 +182,7 @@ require_once 'sunny_function.php';
 				}
 			};
 			var filterName = $("#filterName").val();
-			xmlhttp.open("GET", "bisu10_lab2_ex1_task2.php?command=read(" + filterName + ")", true);
+			xmlhttp.open("GET", "bisu10_lab2_ex1_task2.php?read(" + filterName + ")", true);
 			xmlhttp.send();
 		};
 	</script>

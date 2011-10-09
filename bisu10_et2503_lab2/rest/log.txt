@@ -16,3 +16,75 @@ delete(21,aaa)
 
 read(aaa)
 ((26L, '9999', '1', datetime.datetime(2011, 9, 20, 18, 9)), (27L, '6666', '1', datetime.datetime(2011, 9, 20, 18, 9)), (23L, '5555', '1', datetime.datetime(2011, 9, 20, 18, 0)), (22L, '1212', '1', datetime.datetime(2011, 9, 20, 17, 59)), (20L, '2222222222', '1', datetime.datetime(2011, 9, 20, 17, 58)), (19L, '1001010', '1', datetime.datetime(2011, 9, 20, 17, 58)), (14L, 'eeeeeeeeeeee', '1', datetime.datetime(2011, 9, 20, 17, 0)), (13L, 'rrrrr', '1', datetime.datetime(2011, 9, 20, 16, 58)), (12L, '6666', '5', datetime.datetime(2011, 9, 20, 16, 58)), (9L, 'nnnnnnn', '5', datetime.datetime(2011, 9, 20, 16, 52)), (8L, 'ggggg', '3', datetime.datetime(2011, 9, 20, 16, 50)), (6L, 'bbbbbbbbb', '3', datetime.datetime(2011, 9, 20, 16, 41)), (5L, 'bb', '1', datetime.datetime(2011, 9, 20, 2, 45)))
+
+read(bisu10)
+((42L, '333333', '1', datetime.datetime(2011, 10, 4, 20, 48)), (41L, '41414141', '5', datetime.datetime(2011, 10, 4, 20, 8)), (37L, '1104', '1', datetime.datetime(2011, 10, 4, 20, 4)), (31L, '5566', '1', datetime.datetime(2011, 9, 21, 3, 33)), (1L, 'test ttt1', '3', datetime.datetime(2011, 9, 15, 21, 14)))
+
+read(bisu10)
+((42L, '333333', '1', datetime.datetime(2011, 10, 4, 20, 48)), (41L, '41414141', '5', datetime.datetime(2011, 10, 4, 20, 8)), (37L, '1104', '1', datetime.datetime(2011, 10, 4, 20, 4)), (31L, '5566', '1', datetime.datetime(2011, 9, 21, 3, 33)), (1L, 'test ttt1', '3', datetime.datetime(2011, 9, 15, 21, 14)))
+
+read(bisu10)
+((42L, '333333', '1', datetime.datetime(2011, 10, 4, 20, 48)), (41L, '41414141', '5', datetime.datetime(2011, 10, 4, 20, 8)), (37L, '1104', '1', datetime.datetime(2011, 10, 4, 20, 4)), (31L, '5566', '1', datetime.datetime(2011, 9, 21, 3, 33)), (1L, 'test ttt1', '3', datetime.datetime(2011, 9, 15, 21, 14)))
+
+read(aaa)
+((26L, '9999', '1', datetime.datetime(2011, 9, 21, 3, 9)), (27L, '6666', '1', datetime.datetime(2011, 9, 21, 3, 9)), (23L, '5555', '1', datetime.datetime(2011, 9, 21, 3, 0)), (22L, '1212', '1', datetime.datetime(2011, 9, 21, 2, 59)), (20L, '2222222222', '1', datetime.datetime(2011, 9, 21, 2, 58)), (19L, '1001010', '1', datetime.datetime(2011, 9, 21, 2, 58)), (14L, 'eeeeeeeeeeee', '1', datetime.datetime(2011, 9, 21, 2, 0)), (13L, 'rrrrr', '1', datetime.datetime(2011, 9, 21, 1, 58)), (12L, '6666', '5', datetime.datetime(2011, 9, 21, 1, 58)), (9L, 'nnnnnnn', '5', datetime.datetime(2011, 9, 21, 1, 52)), (8L, 'ggggg', '3', datetime.datetime(2011, 9, 21, 1, 50)), (6L, 'bbbbbbbbb', '3', datetime.datetime(2011, 9, 21, 1, 41)), (5L, 'bb', '1', datetime.datetime(2011, 9, 20, 11, 45)))
+
+read(aaa)
+((26L, '9999', '1', datetime.datetime(2011, 9, 21, 3, 9)), (27L, '6666', '1', datetime.datetime(2011, 9, 21, 3, 9)), (23L, '5555', '1', datetime.datetime(2011, 9, 21, 3, 0)), (22L, '1212', '1', datetime.datetime(2011, 9, 21, 2, 59)), (20L, '2222222222', '1', datetime.datetime(2011, 9, 21, 2, 58)), (19L, '1001010', '1', datetime.datetime(2011, 9, 21, 2, 58)), (14L, 'eeeeeeeeeeee', '1', datetime.datetime(2011, 9, 21, 2, 0)), (13L, 'rrrrr', '1', datetime.datetime(2011, 9, 21, 1, 58)), (12L, '6666', '5', datetime.datetime(2011, 9, 21, 1, 58)), (9L, 'nnnnnnn', '5', datetime.datetime(2011, 9, 21, 1, 52)), (8L, 'ggggg', '3', datetime.datetime(2011, 9, 21, 1, 50)), (6L, 'bbbbbbbbb', '3', datetime.datetime(2011, 9, 21, 1, 41)), (5L, 'bb', '1', datetime.datetime(2011, 9, 20, 11, 45)))
+
+delete(6,aaa)
+6
+
+read(aaa)
+((26L, '9999', '1', datetime.datetime(2011, 9, 21, 3, 9)), (27L, '6666', '1', datetime.datetime(2011, 9, 21, 3, 9)), (23L, '5555', '1', datetime.datetime(2011, 9, 21, 3, 0)), (22L, '1212', '1', datetime.datetime(2011, 9, 21, 2, 59)), (20L, '2222222222', '1', datetime.datetime(2011, 9, 21, 2, 58)), (19L, '1001010', '1', datetime.datetime(2011, 9, 21, 2, 58)), (14L, 'eeeeeeeeeeee', '1', datetime.datetime(2011, 9, 21, 2, 0)), (13L, 'rrrrr', '1', datetime.datetime(2011, 9, 21, 1, 58)), (12L, '6666', '5', datetime.datetime(2011, 9, 21, 1, 58)), (9L, 'nnnnnnn', '5', datetime.datetime(2011, 9, 21, 1, 52)), (8L, 'ggggg', '3', datetime.datetime(2011, 9, 21, 1, 50)), (5L, 'bb', '1', datetime.datetime(2011, 9, 20, 11, 45)))
+
+read(aaa)
+((26L, '9999', '1', datetime.datetime(2011, 9, 21, 3, 9)), (27L, '6666', '1', datetime.datetime(2011, 9, 21, 3, 9)), (23L, '5555', '1', datetime.datetime(2011, 9, 21, 3, 0)), (22L, '1212', '1', datetime.datetime(2011, 9, 21, 2, 59)), (20L, '2222222222', '1', datetime.datetime(2011, 9, 21, 2, 58)), (19L, '1001010', '1', datetime.datetime(2011, 9, 21, 2, 58)), (14L, 'eeeeeeeeeeee', '1', datetime.datetime(2011, 9, 21, 2, 0)), (13L, 'rrrrr', '1', datetime.datetime(2011, 9, 21, 1, 58)), (12L, '6666', '5', datetime.datetime(2011, 9, 21, 1, 58)), (9L, 'nnnnnnn', '5', datetime.datetime(2011, 9, 21, 1, 52)), (8L, 'ggggg', '3', datetime.datetime(2011, 9, 21, 1, 50)), (5L, 'bb', '1', datetime.datetime(2011, 9, 20, 11, 45)))
+
+read(aaa)
+((26L, '9999', '1', datetime.datetime(2011, 9, 21, 3, 9)), (27L, '6666', '1', datetime.datetime(2011, 9, 21, 3, 9)), (23L, '5555', '1', datetime.datetime(2011, 9, 21, 3, 0)), (22L, '1212', '1', datetime.datetime(2011, 9, 21, 2, 59)), (20L, '2222222222', '1', datetime.datetime(2011, 9, 21, 2, 58)), (19L, '1001010', '1', datetime.datetime(2011, 9, 21, 2, 58)), (14L, 'eeeeeeeeeeee', '1', datetime.datetime(2011, 9, 21, 2, 0)), (13L, 'rrrrr', '1', datetime.datetime(2011, 9, 21, 1, 58)), (12L, '6666', '5', datetime.datetime(2011, 9, 21, 1, 58)), (9L, 'nnnnnnn', '5', datetime.datetime(2011, 9, 21, 1, 52)), (8L, 'ggggg', '3', datetime.datetime(2011, 9, 21, 1, 50)), (5L, 'bb', '1', datetime.datetime(2011, 9, 20, 11, 45)))
+
+read(aaa)
+((26L, '9999', '1', datetime.datetime(2011, 9, 21, 3, 9)), (27L, '6666', '1', datetime.datetime(2011, 9, 21, 3, 9)), (23L, '5555', '1', datetime.datetime(2011, 9, 21, 3, 0)), (22L, '1212', '1', datetime.datetime(2011, 9, 21, 2, 59)), (20L, '2222222222', '1', datetime.datetime(2011, 9, 21, 2, 58)), (19L, '1001010', '1', datetime.datetime(2011, 9, 21, 2, 58)), (14L, 'eeeeeeeeeeee', '1', datetime.datetime(2011, 9, 21, 2, 0)), (13L, 'rrrrr', '1', datetime.datetime(2011, 9, 21, 1, 58)), (12L, '6666', '5', datetime.datetime(2011, 9, 21, 1, 58)), (9L, 'nnnnnnn', '5', datetime.datetime(2011, 9, 21, 1, 52)), (8L, 'ggggg', '3', datetime.datetime(2011, 9, 21, 1, 50)), (5L, 'bb', '1', datetime.datetime(2011, 9, 20, 11, 45)))
+
+read(aaa)
+((26L, '9999', '1', datetime.datetime(2011, 9, 21, 3, 9)), (27L, '6666', '1', datetime.datetime(2011, 9, 21, 3, 9)), (23L, '5555', '1', datetime.datetime(2011, 9, 21, 3, 0)), (22L, '1212', '1', datetime.datetime(2011, 9, 21, 2, 59)), (20L, '2222222222', '1', datetime.datetime(2011, 9, 21, 2, 58)), (19L, '1001010', '1', datetime.datetime(2011, 9, 21, 2, 58)), (14L, 'eeeeeeeeeeee', '1', datetime.datetime(2011, 9, 21, 2, 0)), (13L, 'rrrrr', '1', datetime.datetime(2011, 9, 21, 1, 58)), (12L, '6666', '5', datetime.datetime(2011, 9, 21, 1, 58)), (9L, 'nnnnnnn', '5', datetime.datetime(2011, 9, 21, 1, 52)), (8L, 'ggggg', '3', datetime.datetime(2011, 9, 21, 1, 50)), (5L, 'bb', '1', datetime.datetime(2011, 9, 20, 11, 45)))
+
+read(aaa)
+((26L, '9999', '1', datetime.datetime(2011, 9, 21, 3, 9)), (27L, '6666', '1', datetime.datetime(2011, 9, 21, 3, 9)), (23L, '5555', '1', datetime.datetime(2011, 9, 21, 3, 0)), (22L, '1212', '1', datetime.datetime(2011, 9, 21, 2, 59)), (20L, '2222222222', '1', datetime.datetime(2011, 9, 21, 2, 58)), (19L, '1001010', '1', datetime.datetime(2011, 9, 21, 2, 58)), (14L, 'eeeeeeeeeeee', '1', datetime.datetime(2011, 9, 21, 2, 0)), (13L, 'rrrrr', '1', datetime.datetime(2011, 9, 21, 1, 58)), (12L, '6666', '5', datetime.datetime(2011, 9, 21, 1, 58)), (9L, 'nnnnnnn', '5', datetime.datetime(2011, 9, 21, 1, 52)), (8L, 'ggggg', '3', datetime.datetime(2011, 9, 21, 1, 50)), (5L, 'bb', '1', datetime.datetime(2011, 9, 20, 11, 45)))
+
+read(aaa)
+((26L, '9999', '1', datetime.datetime(2011, 9, 21, 3, 9)), (27L, '6666', '1', datetime.datetime(2011, 9, 21, 3, 9)), (23L, '5555', '1', datetime.datetime(2011, 9, 21, 3, 0)), (22L, '1212', '1', datetime.datetime(2011, 9, 21, 2, 59)), (20L, '2222222222', '1', datetime.datetime(2011, 9, 21, 2, 58)), (19L, '1001010', '1', datetime.datetime(2011, 9, 21, 2, 58)), (14L, 'eeeeeeeeeeee', '1', datetime.datetime(2011, 9, 21, 2, 0)), (13L, 'rrrrr', '1', datetime.datetime(2011, 9, 21, 1, 58)), (12L, '6666', '5', datetime.datetime(2011, 9, 21, 1, 58)), (9L, 'nnnnnnn', '5', datetime.datetime(2011, 9, 21, 1, 52)), (8L, 'ggggg', '3', datetime.datetime(2011, 9, 21, 1, 50)), (5L, 'bb', '1', datetime.datetime(2011, 9, 20, 11, 45)))
+
+delete(9,aaa)
+9
+
+read(aaa)
+((26L, '9999', '1', datetime.datetime(2011, 9, 21, 3, 9)), (27L, '6666', '1', datetime.datetime(2011, 9, 21, 3, 9)), (23L, '5555', '1', datetime.datetime(2011, 9, 21, 3, 0)), (22L, '1212', '1', datetime.datetime(2011, 9, 21, 2, 59)), (20L, '2222222222', '1', datetime.datetime(2011, 9, 21, 2, 58)), (19L, '1001010', '1', datetime.datetime(2011, 9, 21, 2, 58)), (14L, 'eeeeeeeeeeee', '1', datetime.datetime(2011, 9, 21, 2, 0)), (13L, 'rrrrr', '1', datetime.datetime(2011, 9, 21, 1, 58)), (12L, '6666', '5', datetime.datetime(2011, 9, 21, 1, 58)), (8L, 'ggggg', '3', datetime.datetime(2011, 9, 21, 1, 50)), (5L, 'bb', '1', datetime.datetime(2011, 9, 20, 11, 45)))
+
+read(aaa)
+((26L, '9999', '1', datetime.datetime(2011, 9, 21, 3, 9)), (27L, '6666', '1', datetime.datetime(2011, 9, 21, 3, 9)), (23L, '5555', '1', datetime.datetime(2011, 9, 21, 3, 0)), (22L, '1212', '1', datetime.datetime(2011, 9, 21, 2, 59)), (20L, '2222222222', '1', datetime.datetime(2011, 9, 21, 2, 58)), (19L, '1001010', '1', datetime.datetime(2011, 9, 21, 2, 58)), (14L, 'eeeeeeeeeeee', '1', datetime.datetime(2011, 9, 21, 2, 0)), (13L, 'rrrrr', '1', datetime.datetime(2011, 9, 21, 1, 58)), (12L, '6666', '5', datetime.datetime(2011, 9, 21, 1, 58)), (8L, 'ggggg', '3', datetime.datetime(2011, 9, 21, 1, 50)), (5L, 'bb', '1', datetime.datetime(2011, 9, 20, 11, 45)))
+
+read(aaa)
+((26L, '9999', '1', datetime.datetime(2011, 9, 21, 3, 9)), (27L, '6666', '1', datetime.datetime(2011, 9, 21, 3, 9)), (23L, '5555', '1', datetime.datetime(2011, 9, 21, 3, 0)), (22L, '1212', '1', datetime.datetime(2011, 9, 21, 2, 59)), (20L, '2222222222', '1', datetime.datetime(2011, 9, 21, 2, 58)), (19L, '1001010', '1', datetime.datetime(2011, 9, 21, 2, 58)), (14L, 'eeeeeeeeeeee', '1', datetime.datetime(2011, 9, 21, 2, 0)), (13L, 'rrrrr', '1', datetime.datetime(2011, 9, 21, 1, 58)), (12L, '6666', '5', datetime.datetime(2011, 9, 21, 1, 58)), (8L, 'ggggg', '3', datetime.datetime(2011, 9, 21, 1, 50)), (5L, 'bb', '1', datetime.datetime(2011, 9, 20, 11, 45)))
+
+read(aaa)
+((26L, '9999', '1', datetime.datetime(2011, 9, 21, 3, 9)), (27L, '6666', '1', datetime.datetime(2011, 9, 21, 3, 9)), (23L, '5555', '1', datetime.datetime(2011, 9, 21, 3, 0)), (22L, '1212', '1', datetime.datetime(2011, 9, 21, 2, 59)), (20L, '2222222222', '1', datetime.datetime(2011, 9, 21, 2, 58)), (19L, '1001010', '1', datetime.datetime(2011, 9, 21, 2, 58)), (14L, 'eeeeeeeeeeee', '1', datetime.datetime(2011, 9, 21, 2, 0)), (13L, 'rrrrr', '1', datetime.datetime(2011, 9, 21, 1, 58)), (12L, '6666', '5', datetime.datetime(2011, 9, 21, 1, 58)), (8L, 'ggggg', '3', datetime.datetime(2011, 9, 21, 1, 50)), (5L, 'bb', '1', datetime.datetime(2011, 9, 20, 11, 45)))
+
+update(12,aaa,6666666666666,10/08/2011 23:45:41,5)
+12
+
+read(aaa)
+((12L, '6666666666666', '5', datetime.datetime(2011, 10, 8, 23, 45)), (26L, '9999', '1', datetime.datetime(2011, 9, 21, 3, 9)), (27L, '6666', '1', datetime.datetime(2011, 9, 21, 3, 9)), (23L, '5555', '1', datetime.datetime(2011, 9, 21, 3, 0)), (22L, '1212', '1', datetime.datetime(2011, 9, 21, 2, 59)), (20L, '2222222222', '1', datetime.datetime(2011, 9, 21, 2, 58)), (19L, '1001010', '1', datetime.datetime(2011, 9, 21, 2, 58)), (14L, 'eeeeeeeeeeee', '1', datetime.datetime(2011, 9, 21, 2, 0)), (13L, 'rrrrr', '1', datetime.datetime(2011, 9, 21, 1, 58)), (8L, 'ggggg', '3', datetime.datetime(2011, 9, 21, 1, 50)), (5L, 'bb', '1', datetime.datetime(2011, 9, 20, 11, 45)))
+
+read(bisu10)
+((42L, '333333', '1', datetime.datetime(2011, 10, 4, 20, 48)), (41L, '41414141', '5', datetime.datetime(2011, 10, 4, 20, 8)), (37L, '1104', '1', datetime.datetime(2011, 10, 4, 20, 4)), (31L, '5566', '1', datetime.datetime(2011, 9, 21, 3, 33)), (1L, 'test ttt1', '3', datetime.datetime(2011, 9, 15, 21, 14)))
+
+create(bisu10,..................,10/08/2011 23:46:10,2)
+43
+
+read(bisu10)
+((43L, '..................', '2', datetime.datetime(2011, 10, 8, 23, 46)), (42L, '333333', '1', datetime.datetime(2011, 10, 4, 20, 48)), (41L, '41414141', '5', datetime.datetime(2011, 10, 4, 20, 8)), (37L, '1104', '1', datetime.datetime(2011, 10, 4, 20, 4)), (31L, '5566', '1', datetime.datetime(2011, 9, 21, 3, 33)), (1L, 'test ttt1', '3', datetime.datetime(2011, 9, 15, 21, 14)))
+
+read(bisu10)
+((43L, '..................', '2', datetime.datetime(2011, 10, 8, 23, 46)), (42L, '333333', '1', datetime.datetime(2011, 10, 4, 20, 48)), (41L, '41414141', '5', datetime.datetime(2011, 10, 4, 20, 8)), (37L, '1104', '1', datetime.datetime(2011, 10, 4, 20, 4)), (31L, '5566', '1', datetime.datetime(2011, 9, 21, 3, 33)), (1L, 'test ttt1', '3', datetime.datetime(2011, 9, 15, 21, 14)))

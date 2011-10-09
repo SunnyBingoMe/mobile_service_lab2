@@ -1,0 +1,30 @@
+<?php
+echo $this->doctype('XHTML1_TRANSITIONAL')."\n";
+?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<?php
+	$this->headMeta()->appendHttpEquiv('Content-type', 'text/html;charset=utf-8');
+	echo $this->headMeta();
+	
+	$this->headTitle('Sunny Soap');
+	$this->headTitle()->setSeparator(' - ');
+	echo $this->headTitle();
+	
+    $this->headScript()->appendFile('/file/href?library/Sunny/scripts/sunny_function.js');
+	$this->headScript()->appendFile("http://sunnyboy.me/personal/ga.js");
+	echo $this->headScript();
+	
+	$this->headLink()->headLink(array('rel'=>"SHORTCUT ICON", 'href'=>'http://sunnyboy.me/photos/_.jpg'));
+	echo $this->headLink();
+	?>
+	
+</head>
+
+<body>
+    <?php echo $this->message ?>
+    <?php echo $this->layout()->content ?>
+
+</body>
+</html>
+

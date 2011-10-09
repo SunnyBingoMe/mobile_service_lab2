@@ -6,13 +6,9 @@ require_once 'database_connection.php';
 require_once 'sunny_function.php';
 
 ?><?php 
-$command = $_POST['command'];
+$command = getRawPostString();
 appendFile("log.txt", "\n" . $command . "\n");
 $commandSplited = explode("(", $command);
-if ($commandSplited[0] != "create"){
-    //echo "not create";
-    exit;
-}
 $commandSplited[1] = substr($commandSplited[1], 0, strlen($commandSplited[1]) - 1);
 $commandDetailsSplited = explode(",", $commandSplited[1]);
 $newName = $commandDetailsSplited[0];

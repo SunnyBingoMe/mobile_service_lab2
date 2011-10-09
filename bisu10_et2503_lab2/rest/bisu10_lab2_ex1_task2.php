@@ -7,9 +7,8 @@ require_once 'database_connection.php';
 require_once 'sunny_function.php';
 
 
-$command = $_GET['command'];
+$command = getRawQueryString();
 appendFile("log.txt", "\n" . $command . "\n");
-shell_exec("'$command' >> log.txt");
 $commandSplited = explode("(", $command); //delete
 // omit if
 $commandSplited[1] = substr($commandSplited[1], 0, strlen($commandSplited[1]) - 1);

@@ -6,7 +6,7 @@ require_once 'database_connection.php';
 require_once 'sunny_function.php';
 
 ?><?php 
-$command = $_POST['command'];
+$command = getRawPostString();
 appendFile("log.txt", "\n" . $command . "\n");
 $commandSplited = explode("(", $command); //delete
 // omit if

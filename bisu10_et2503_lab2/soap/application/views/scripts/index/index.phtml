@@ -1,0 +1,77 @@
+<?php 
+$this->title = 'Main';
+$this->headTitle($this->title);
+?>
+<?php 
+require_once 'library/Sunny/Scripts/site_dependent/database_connection.php';
+
+?><center>
+
+<form action="" method="post">
+<table border = '0' align="center">
+<tr><th colspan='7'>ToDo List (<a href='/index/new'>Add New</a>) </th></tr>
+<tr id='tableHead'>
+	<th>id</th>
+	<th>name</th>
+	<th>text</th>
+	<th>time</th>
+	<th>priority</th>
+	<th>delete</th>
+	<th>edit below</th>
+</tr>
+    <?php 
+    $lineNr = 0;
+    foreach ($this->resultGetTodoList as $todo){
+        $todo = get_object_vars($todo);
+        ?>
+        
+        <tr align="center" bgcolor='<?php echo (($lineNr % 2) ? '' : 'lavender') ?>' >
+        	<td><?php echo $todo['id']?></td>
+        	<td>bisu10</td>
+        	<td><?php echo $todo['note']?></td>
+        	<td><?php echo $todo['date']?></td>
+        	<td><?php echo $todo['prio']?></td>
+        	<td></td>
+        	<td></td>
+        </tr>
+        <?php 
+        $lineNr ++;
+    }
+    
+    ?>
+
+<!-- here is the ToDo entrys -->
+<tr><td id='toDoNr' colspan='7'></td></tr>
+</table>
+</form>
+
+
+<hr />
+
+
+<table border = "0" >
+<tr id='addOrUpdateFormTableHead' ><th colspan="2">Add/Update ToDo</th></tr>
+<?php echo "<tr><td>".$toDoTableColumnNameList[1]."</td><td><input type='text' id='$toDoTableColumnNameList[1]' value='bisu10' maxlength='45' /></td></tr>" ?>
+<?php echo "<tr><td>".$toDoTableColumnNameList[2]."</td><td ><textarea type='textarea' id='$toDoTableColumnNameList[2]' maxlength='495' ></textarea></td></tr>" ?>
+<?php echo "<tr><td>".$toDoTableColumnNameList[3]."</td><td ><input type='text' id='$toDoTableColumnNameList[3]' readonly='readonly' maxlength='40'/></td></tr>" ?>
+<?php 
+	$aOptionLabelPairList = array("1"=>"1","2"=>"2","3"=>"3","4"=>"4","5"=>"5");
+	echo "<tr ><td align='center'>".$toDoTableColumnNameList[4]."</td><td>";
+	input_select("$toDoTableColumnNameList[4]", NULL, $aOptionLabelPairList, NULL, "$toDoTableColumnNameList[4]");
+	echo "</td></tr>";
+	echo "<tr><td colspan='2' align='center'><center><button id='buttonAddOrUpdateEntry' onClick='addOrUpdateEntry()'>add</button></center></td></tr>";
+?>
+</table>
+
+<script type="text/javascript" >
+	$("<?php echo '#'.$toDoTableColumnNameList[3] ?>").datetimepicker({
+		showSecond: false,
+		timeFormat: 'hh:mm:ss',
+		stepHour: 0.1,
+		stepMinute: 0.1,
+		stepSecond: 0.1
+	});
+</script>
+
+
+</center>
