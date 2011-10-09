@@ -11,28 +11,35 @@ require_once 'library/Sunny/Scripts/site_dependent/database_connection.php';
 <table border = '0' align="center">
 <tr><th colspan='7'>ToDo List (<a href='/index/new'>Add New</a>) </th></tr>
 <tr id='tableHead'>
-	<th>id</th>
-	<th>name</th>
-	<th>text</th>
-	<th>time</th>
-	<th>priority</th>
-	<th>delete</th>
-	<th>edit below</th>
+	<th>ID</th>
+	<th>Name</th>
+	<th>Note</th>
+	<th>Time</th>
+	<th>Priority</th>
+	<th>Delete</th>
+	<th>Edit</th>
 </tr>
     <?php 
     $lineNr = 0;
     foreach ($this->resultGetTodoList as $todo){
         $todo = get_object_vars($todo);
+        $id=$todo['id'];
+        $name='bisu10';
+        $note=$todo['note'];
+        $time=$todo['date'];
+        $priority=$todo['prio'];
         ?>
         
         <tr align="center" bgcolor='<?php echo (($lineNr % 2) ? '' : 'lavender') ?>' >
-        	<td><?php echo $todo['id']?></td>
+        	<td><?php echo $id?></td>
         	<td>bisu10</td>
-        	<td><?php echo $todo['note']?></td>
-        	<td><?php echo $todo['date']?></td>
-        	<td><?php echo $todo['prio']?></td>
-        	<td></td>
-        	<td></td>
+        	<td><?php echo $note?></td>
+        	<td><?php echo $time?></td>
+        	<td><?php echo $priority?></td>
+        	<td><a href='/index/delete?id=<?php echo $id ?>'>Delete</a></td>
+        	<td><a href='/index/update?<?php 
+        	echo "id=$id&name=$name&note=$note&time=$time&priority=$priority"
+        	?>'>Edit</a></td>
         </tr>
         <?php 
         $lineNr ++;

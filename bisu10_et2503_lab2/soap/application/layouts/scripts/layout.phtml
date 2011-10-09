@@ -22,7 +22,19 @@ echo $this->doctype('XHTML1_TRANSITIONAL')."\n";
 </head>
 
 <body>
-    <?php if ($this->message){var_dump($this->message);} ?>
+    <?php 
+    if ($this->message){
+        echo "<pre>this-message: \n"; 
+        var_dump($this->message); 
+        echo '</pre>';
+    }
+    if ($this->errors){
+        echo "<pre>this-errors: \n"; 
+        var_dump($this->errors);
+        echo '</pre>'; 
+    } 
+    ?>
+    
     <?php echo $this->layout()->content ?>
 
 </body>

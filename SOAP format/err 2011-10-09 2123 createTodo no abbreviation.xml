@@ -1,0 +1,48 @@
+PV5d)pEdi@@L6x/Tqa2PNPOST / HTTP/1.1
+Host: lol.comlab.bth.se:8090
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.3.3-1ubuntu9.5
+Content-Type: text/xml; charset=utf-8
+SOAPAction: "createTodo"
+Content-Length: 630
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="todo.wdsl" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><SOAP-ENV:Body><ns1:createTodo><acro xsi:type="xsd:string">bisu10</acro><time xsi:type="xsd:string">2011-10-09 20:06:52</time><note xsi:type="xsd:string">this is text note.</note><prio xsi:type="xsd:int">0</prio></ns1:createTodo></SOAP-ENV:Body></SOAP-ENV:Envelope>
+
+
+
+)pPV5dE&4/xT2qPHTTP/1.1 500 Internal Server Error
+Content-type: text/xml
+Date: Sun, 09 Oct 2011 18:36:18 GMT
+Server: CherryPy/2.3.0
+Connection: close
+
+<SOAP-ENV:Envelope xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance" xmlns:plnk="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Body><SOAP-ENV:Fault><faultcode>createTodoFault</faultcode><faultstring>%d format: a number is required, not NoneType</faultstring><detail>Traceback (most recent call last):
+  File "/usr/lib/pymodules/python2.6/soaplib/wsgi_soap.py", line 244, in __call__
+    retval = func(*params)
+  File "/usr/lib/pymodules/python2.6/soaplib/service.py", line 56, in explainMethod
+    return f(*args, **kwargs)
+  File "/usr/local/src/et2503/todoPythonServer.py", line 74, in createTodo
+    cursor.execute("insert into todo values ('','%s','%s','%i','%s')" % (note,time,priority,acronym))
+TypeError: %d format: a number is required, not NoneType
+</detail></SOAP-ENV:Fault></SOAP-ENV:Body></SOAP-ENV:Envelope>
+
+
+
+!!! the acro should be acronym, use full not abbr ~~~~~!!!!!!!!!!
+
+
+
+)pPV5dE*%/x+hO3PHTTP/1.1 200 OK
+Content-Type: text/xml
+Date: Sun, 09 Oct 2011 20:07:14 GMT
+Server: CherryPy/2.3.0
+Connection: close
+
+)pPV5dEJ*&@/x+iO3Pf<SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Body><createTodoResponse><createTodoResult xsi:type="xs:string">INSERTED</createTodoResult></createTodoResponse></SOAP-ENV:Body></SOAP-ENV:Envelope>
+
+
+
+)pPV5dEI*/x04{>F?P+<SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Body><updateTodoResponse><updateTodoResult xsi:type="xs:string">UPDATED</updateTodoResult></updateTodoResponse></SOAP-ENV:Body></SOAP-ENV:Envelope>
+
+

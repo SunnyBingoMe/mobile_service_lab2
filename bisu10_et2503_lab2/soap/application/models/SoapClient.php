@@ -24,14 +24,37 @@ class Application_Model_SoapClient
         return $resultGetTodoList = $resultGetTodoList['TodoData'];
     }
     
-    public function createTodo($acronym, $time, $note, $priority) {
+    public function createTodo($form) {
+        $acronym = $form->getValue('username');
+        $time = $form->getValue('time');
+        $note = $form->getValue('textarea');
+        $priority = $form->getValue('priority');
+
         try {
-            $resultCreateTodo = $this->client->createTodo($acronym, $time, $note, $priority);
+            $result = $this->client->createTodo($acronym, $time, $note, $priority);
         }catch (Exception $e){
             throw $e;
         }
         
-        return $resultCreateTodo;
+        return $result;
+        
+    }
+    
+    public function updateTodo($form) {
+        $id = $form->getValue('id');
+        $acronym = $form->getValue('username');
+        $time = $form->getValue('time');
+        $note = $form->getValue('textarea');
+        $priority = $form->getValue('priority');
+
+        try {
+            $result = $this->client->updateTodo($id, $acronym, $time, $note, $priority);
+        }catch (Exception $e){
+            throw $e;
+        }
+        
+        return $result;
+        
         
     }
 
