@@ -26,7 +26,16 @@ class IndexController extends Zend_Controller_Action
         if ($_POST){
         	if($form->isValid($_POST)){
         	    try{
-        	        $this->view->message = 'submit okj';
+        	        $client = new Application_Model_SoapClient();
+        	        $acronym = $form->getValue('username');
+        	        $time = $form->getValue('time');
+        	        $note = $form->getValue('textarea');
+        	        $priority = $form->getValue('priority');
+        	        if ( ($returned = $client->createTodo($acronym, $time, $note, $priority) )
+        	            == 'INSERTED'){
+    	                $this->view->ok = 1;
+    	            }
+        	        
     	        }catch (Exception $e){
     	            $this->view->errors = $e->getTrace();
     	        	$this->view->form = $form;

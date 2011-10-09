@@ -15,16 +15,25 @@ class Application_Model_SoapClient
     }
     
     public function getTodoList($name = 'bisu10'){
-        $commandDetails = $name;
         try {
-            $resultGetTodoList = get_object_vars($this->client->getTodoList($commandDetails));
+            $resultGetTodoList = get_object_vars($this->client->getTodoList($name));
         }catch (Exception $e){
             throw $e;
         }
         
         return $resultGetTodoList = $resultGetTodoList['TodoData'];
     }
-
+    
+    public function createTodo($acronym, $time, $note, $priority) {
+        try {
+            $resultCreateTodo = $this->client->createTodo($acronym, $time, $note, $priority);
+        }catch (Exception $e){
+            throw $e;
+        }
+        
+        return $resultCreateTodo;
+        
+    }
 
 
 }

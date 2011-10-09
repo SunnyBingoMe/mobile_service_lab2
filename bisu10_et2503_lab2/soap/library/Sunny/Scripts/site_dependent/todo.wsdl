@@ -27,18 +27,25 @@ xmlns='http://schemas.xmlsoap.org/wsdl/'
 	</types>
 	
 	
+	
 	<message name='getTodoListRequest'>
 	  <part name='acro' type='xs:string'/>
 	</message>
 	<message name='getTodoListResponse'>
 	  <part name='getTodoListResponse' type='tns:getTodoListResponseDetails'/>
 	</message>
+	
 	<message name='createTodoRequest'>
-	  <part name='symbol' type='xs:string'/>
+	  <part name='acronym' type='xs:string'/>
+	  <part name='time' type='xs:string'/>
+	  <part name='note' type='xs:string'/>
+	  <part name='priority' type='xs:int'/>
 	</message>
 	<message name='createTodoResponse'>
 	  <part name='Result' type='xs:string'/>
 	</message>
+	
+	
 	
 	<portType name='SunnyPortType'>
 	  <operation name='getTodoList'>
@@ -50,6 +57,8 @@ xmlns='http://schemas.xmlsoap.org/wsdl/'
 	    <output message='tns:createTodoResponse'/>  
 	  </operation>   
 	</portType>
+	
+	
 	
 	<binding name='SunnyBinding' type='tns:SunnyPortType'>
 	  <soap:binding style='rpc' transport='http://schemas.xmlsoap.org/soap/http'/>
@@ -64,6 +73,8 @@ xmlns='http://schemas.xmlsoap.org/wsdl/'
 	    <output><soap:body use='encoded' namespace='todo.wdsl' encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/></output>
 	  </operation>
 	</binding>
+	
+	
 	
 	<service name='SunnyService'>
 	  <port name='SunnyPortType' binding='tns:SunnyBinding'>

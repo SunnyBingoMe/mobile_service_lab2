@@ -26,7 +26,7 @@ class Application_Form_NewTodo extends Zend_Form
         ;
             
         $options = array('multiOptions'=>array(
-            1, 2, 3, 4, 5
+           0, 1, 2, 3, 4, 5
         ));
         $priority = new Zend_Form_Element_Select('priority', $options);
         $priority->setLabel('Priority');

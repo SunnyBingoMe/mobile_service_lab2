@@ -45,33 +45,6 @@ require_once 'library/Sunny/Scripts/site_dependent/database_connection.php';
 </table>
 </form>
 
-
 <hr />
-
-
-<table border = "0" >
-<tr id='addOrUpdateFormTableHead' ><th colspan="2">Add/Update ToDo</th></tr>
-<?php echo "<tr><td>".$toDoTableColumnNameList[1]."</td><td><input type='text' id='$toDoTableColumnNameList[1]' value='bisu10' maxlength='45' /></td></tr>" ?>
-<?php echo "<tr><td>".$toDoTableColumnNameList[2]."</td><td ><textarea type='textarea' id='$toDoTableColumnNameList[2]' maxlength='495' ></textarea></td></tr>" ?>
-<?php echo "<tr><td>".$toDoTableColumnNameList[3]."</td><td ><input type='text' id='$toDoTableColumnNameList[3]' readonly='readonly' maxlength='40'/></td></tr>" ?>
-<?php 
-	$aOptionLabelPairList = array("1"=>"1","2"=>"2","3"=>"3","4"=>"4","5"=>"5");
-	echo "<tr ><td align='center'>".$toDoTableColumnNameList[4]."</td><td>";
-	input_select("$toDoTableColumnNameList[4]", NULL, $aOptionLabelPairList, NULL, "$toDoTableColumnNameList[4]");
-	echo "</td></tr>";
-	echo "<tr><td colspan='2' align='center'><center><button id='buttonAddOrUpdateEntry' onClick='addOrUpdateEntry()'>add</button></center></td></tr>";
-?>
-</table>
-
-<script type="text/javascript" >
-	$("<?php echo '#'.$toDoTableColumnNameList[3] ?>").datetimepicker({
-		showSecond: false,
-		timeFormat: 'hh:mm:ss',
-		stepHour: 0.1,
-		stepMinute: 0.1,
-		stepSecond: 0.1
-	});
-</script>
-
 
 </center>

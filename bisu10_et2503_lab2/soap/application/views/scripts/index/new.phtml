@@ -1,5 +1,11 @@
 <?php 
-echo $this->message;
-
+if ($this->ok){
+?>
+<h3>Success ! ('INSERTED')</h3>
+<?php 
+}
 echo $this->form;
+?>
+<a href='/'>View All</a><br/>
+<a href='/index/new'>Add New</a><br/>
 
